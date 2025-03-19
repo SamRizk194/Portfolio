@@ -2,10 +2,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 20px;
   text-align: center;
-  height: 100dvh;
-  min-height: 500px;
+  min-height: 100vh;
+  padding-bottom: 40px;
 }
 
 .hero {
@@ -75,4 +76,5 @@ button:active {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding-top: 20px;
 }
