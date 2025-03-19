@@ -15,28 +15,28 @@ function Projects() {
           name="Project 1"
           description="This is the first project. It includes features like X, Y, and Z."
           linkOne="https://sam-e-commerce.netlify.app/"
-          linkTwo="https://github.com/username/project1"
+          linkTwo="https://github.com/SamRizk194/My-E-Commerce"
         />
         <ProjectCard
           src={foodera}
           name="Project 2"
           description="This is the second project. It's a cool project with features A, B, and C."
           linkOne="https://samfoodera.netlify.app/"
-          linkTwo="https://github.com/username/project2"
+          linkTwo="https://github.com/SamRizk194/Foodera"
         />
         <ProjectCard
           src={edusity}
           name="Project 3"
           description="This is the third project. It offers amazing features such as P, Q, and R."
           linkOne="https://sam-edusity.netlify.app/"
-          linkTwo="https://github.com/username/project3"
+          linkTwo="https://github.com/SamRizk194/Edusity"
         />
         <ProjectCard
           src={bondi}
           name="Project 4"
           description="This is the fourth project. It has functionalities like M, N, and O."
           linkOne="https://bondi-project.netlify.app/"
-          linkTwo="https://github.com/username/project4"
+          linkTwo="https://github.com/SamRizk194/Bondi"
         />
       </div>
     </section>

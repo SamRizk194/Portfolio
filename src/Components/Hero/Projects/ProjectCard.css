@@ -1,10 +1,10 @@
 .project-card {
-  width: 21rem;
+  width: 22rem;
   border: 1px solid #ddd;
   border-radius: 24px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 20px 35px;
+  margin: 25px;
   transition: transform 0.3s ease-in-out;
   height: 442px;
   transition: 0.5s;
