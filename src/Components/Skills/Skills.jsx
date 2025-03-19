@@ -2,7 +2,7 @@ import "./Skills.css";
 import H_tml from "../../assets/html.png";
 import C_ss from "../../assets/css.png";
 import J_s from "../../assets/js.png";
-import B_ootstrap from "../../assets/Bootstrap.png";
+import B_ootstrap from "../../assets/bootstrap.png";
 import R_eact from "../../assets/react.png";
 import R_edux from "../../assets/redux.webp";
 import R_outer from "../../assets/router.webp";
