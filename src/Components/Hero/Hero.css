@@ -78,6 +78,8 @@ button:active {
 @media (max-width: 800px) {
   .containerr {
     margin-top: 135px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
