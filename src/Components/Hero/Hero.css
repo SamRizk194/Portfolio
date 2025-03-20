@@ -17,10 +17,6 @@
   justify-content: center;
 }
 
-span {
-  margin-top: 40px;
-}
-
 span a img {
   width: 30px;
 }
@@ -68,6 +64,8 @@ button:active {
 
 .description {
   max-width: 24ch;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .info {
