@@ -15,10 +15,9 @@ function Hero() {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <section className="container">
+    <section className="containerr">
       <div className="colorModeContainer">
         <img src={heroImg} className="hero" alt="img" />
-
         <img
           src={theme === "light" ? sunIcon : moonIcon}
           className="colorMode"

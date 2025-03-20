@@ -1,18 +1,18 @@
-.container {
+.containerr {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   gap: 20px;
   text-align: center;
-  margin-top: 30px;
+  height: 100dvh;
+  min-height: 500px;
 }
 
 .hero {
   max-width: 200px;
 }
 
-.container span {
+.containerr span {
   display: flex;
   gap: 25px;
   justify-content: center;
@@ -76,4 +76,24 @@ button:active {
   flex-direction: column;
   gap: 20px;
   padding-top: 20px;
+}
+
+@media (min-width: 800px) {
+  .containerr {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .containerr .hero {
+    max-width: 350px;
+    width: 350px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .containerr .hero {
+    max-width: 400px;
+    width: 400px;
+  }
 }
