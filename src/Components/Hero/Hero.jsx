@@ -1,3 +1,6 @@
+import React, { useEffect, useRef } from "react";
+import { motion } from "framer-motion";
+import Typed from "typed.js";
 import "./Hero.css";
 import heroImg from "../../assets/hero-img.png";
 import sunIcon from "../../assets/sun.svg";
@@ -13,6 +16,51 @@ import { useTheme } from "../../common/ThemeContext";
 
 function Hero() {
   const { theme, toggleTheme } = useTheme();
+  const typedElement = useRef(null);
+
+  const hVariant = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+      },
+    },
+  };
+
+  const spanVariant = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 0.9,
+        ease: "easeInOut",
+      },
+    },
+  };
+
+  useEffect(() => {
+    const options = {
+      strings: [
+        "With a passion for developing modern React web apps for commercial businesses.",
+      ],
+      typeSpeed: 50,
+      backSpeed: 25,
+      backDelay: 1000,
+      loop: false,
+      showCursor: false,
+    };
+
+    const typed = new Typed(typedElement.current, options);
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
 
   return (
     <section className="containerr">
@@ -27,11 +75,19 @@ function Hero() {
       </div>
 
       <div className="info">
-        <h1>
-          Sameh
-          <br />
-          Rizk
-        </h1>
+        <motion.h1
+          variants={hVariant}
+          initial="hidden"
+          animate="visible"
+          className="name"
+        >
+          <motion.span variants={spanVariant} className="firstName">
+            Sameh
+          </motion.span>
+          <motion.span variants={spanVariant} className="lastName">
+            Rizk
+          </motion.span>
+        </motion.h1>
         <h2>Frontend Developer</h2>
         <span>
           <a
@@ -68,10 +124,7 @@ function Hero() {
             />
           </a>
         </span>
-        <p className="description">
-          With a passion for developing modern React web apps for commercial
-          businesses.
-        </p>
+        <p className="description" ref={typedElement}></p>
         <a href={CV} download>
           <button className="hover">Resume</button>
         </a>
