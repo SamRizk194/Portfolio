@@ -75,6 +75,12 @@ button:active {
   padding-top: 20px;
 }
 
+@media (max-width: 800px) {
+  .containerr {
+    margin-top: 135px;
+  }
+}
+
 @media (min-width: 800px) {
   .containerr {
     flex-direction: row-reverse;
