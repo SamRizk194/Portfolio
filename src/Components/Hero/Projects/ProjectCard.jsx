@@ -19,12 +19,14 @@ function ProjectCard(props) {
             <FontAwesomeIcon
               icon={faLink}
               style={{ color: theme === "light" ? "black" : "white" }}
+              className="fa-icon"
             />
           </a>
           <a href={props.linkTwo} className="project-card-link" target="_blank">
             <FontAwesomeIcon
               icon={faGithub}
               style={{ color: theme === "light" ? "black" : "white" }}
+              className="fa-icon"
             />
           </a>
         </div>
