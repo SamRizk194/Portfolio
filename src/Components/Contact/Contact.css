@@ -14,7 +14,7 @@ form {
 }
 .message {
   display: flex;
-  gap: 40px;
+  gap: 70px;
 }
 
 textarea,
@@ -70,6 +70,8 @@ textarea {
 
 span {
   font-family: "Rubik", sans-serif;
+  color: rgb(79, 193, 83);
+  margin-top: 20px !important;
 }
 
 .lottie {

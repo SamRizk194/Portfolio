@@ -39,7 +39,7 @@ function Contact() {
     const data = await response.json();
 
     if (data.success) {
-      setResult("Form Submitted Successfully");
+      setResult("Message Sent Successfully");
       event.target.reset();
     } else {
       console.log("Error", data);
@@ -53,47 +53,48 @@ function Contact() {
       </div>
       <section id="contact" className="container">
         <h1 className="sectionTitle">Contact</h1>
-
         <div className="message">
-          <form onSubmit={onSubmit}>
-            <div className="formGroup">
-              <label htmlFor="name" hidden>
-                Name
-              </label>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Name"
-                required
-              />
-            </div>
-            <div className="formGroup">
-              <label htmlFor="email" hidden>
-                Email
-              </label>
-              <input
-                type="text"
-                name="email"
-                id="email"
-                placeholder="Email"
-                required
-              />
-            </div>
-            <div className="formGroup">
-              <label htmlFor="message" hidden>
-                Message
-              </label>
-              <textarea
-                name="message"
-                id="message"
-                placeholder="Message"
-                required
-              ></textarea>
-            </div>
-            <input className="btn hover" type="submit" value="Submit" />
-          </form>
-          <span>{result}</span>
+          <div>
+            <form onSubmit={onSubmit}>
+              <div className="formGroup">
+                <label htmlFor="name" hidden>
+                  Name
+                </label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Name"
+                  required
+                />
+              </div>
+              <div className="formGroup">
+                <label htmlFor="email" hidden>
+                  Email
+                </label>
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <div className="formGroup">
+                <label htmlFor="message" hidden>
+                  Message
+                </label>
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="Message"
+                  required
+                ></textarea>
+              </div>
+              <input className="btn hover" type="submit" value="Submit" />
+            </form>
+            <span>{result}</span>
+          </div>
           <div className="lottie">
             <Lottie options={defaultOption} height={300} width={300} />
           </div>
