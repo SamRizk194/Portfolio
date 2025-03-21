@@ -21,11 +21,13 @@ function Hero() {
   const hVariant = {
     hidden: {
       opacity: 0,
+      x: 100,
     },
     visible: {
       opacity: 1,
+      x: 0,
       transition: {
-        staggerChildren: 0.15,
+        duration: 1,
       },
     },
   };
@@ -37,8 +39,36 @@ function Hero() {
     visible: {
       opacity: 1,
       transition: {
-        duration: 0.9,
+        duration: 1,
         ease: "easeInOut",
+      },
+    },
+  };
+
+  const iconVariant = {
+    hidden: {
+      opacity: 0,
+      x: 100,
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 1,
+      },
+    },
+  };
+
+  const h2Variant = {
+    hidden: {
+      opacity: 0,
+      x: -100,
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 1,
       },
     },
   };
@@ -52,7 +82,7 @@ function Hero() {
       backSpeed: 25,
       backDelay: 1000,
       loop: false,
-      showCursor: false,
+      showCursor: true,
     };
 
     const typed = new Typed(typedElement.current, options);
@@ -88,41 +118,54 @@ function Hero() {
             Rizk
           </motion.span>
         </motion.h1>
-        <h2>Frontend Developer</h2>
+
+        <motion.h2 variants={h2Variant} initial="hidden" animate="visible">
+          Frontend Developer
+        </motion.h2>
+
         <span>
-          <a
+          <motion.a
             href="https://github.com/SamRizk194"
             target="_blank"
             rel="noopener noreferrer"
+            variants={iconVariant}
+            initial="hidden"
+            animate="visible"
           >
             <FontAwesomeIcon
               icon={faGithub}
               size="2x"
               style={{ color: theme === "light" ? "black" : "white" }}
             />
-          </a>
-          <a
+          </motion.a>
+          <motion.a
             href="https://www.linkedin.com/in/sameh-rizk-abb5ba258"
             target="_blank"
             rel="noopener noreferrer"
+            variants={iconVariant}
+            initial="hidden"
+            animate="visible"
           >
             <FontAwesomeIcon
               icon={faLinkedin}
               size="2x"
               style={{ color: theme === "light" ? "black" : "white" }}
             />
-          </a>
-          <a
+          </motion.a>
+          <motion.a
             href="https://www.facebook.com/sameh.ozmel/"
             target="_blank"
             rel="noopener noreferrer"
+            variants={iconVariant}
+            initial="hidden"
+            animate="visible"
           >
             <FontAwesomeIcon
               icon={faFacebook}
               size="2x"
               style={{ color: theme === "light" ? "black" : "white" }}
             />
-          </a>
+          </motion.a>
         </span>
         <p className="description" ref={typedElement}></p>
         <a href={CV} download>
