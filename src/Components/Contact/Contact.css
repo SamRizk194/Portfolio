@@ -2,20 +2,19 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 form {
   display: flex;
   flex-direction: column;
   gap: 15px !important;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .message {
   display: flex;
-  flex-direction: row;
-  gap: 30px;
-  margin-left: auto;
-  margin-right: auto;
+  gap: 40px;
 }
 
 textarea,
@@ -71,6 +70,10 @@ textarea {
 
 span {
   font-family: "Rubik", sans-serif;
+}
+
+.lottie {
+  margin-top: 10px;
 }
 
 @media (max-width: 800px) {

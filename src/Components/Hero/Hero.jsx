@@ -91,7 +91,7 @@ function Hero() {
       typeSpeed: 50,
       backSpeed: 25,
       backDelay: 1000,
-      loop: false,
+      loop: true,
       showCursor: true,
     };
 

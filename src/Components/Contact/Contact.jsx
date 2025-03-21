@@ -53,6 +53,7 @@ function Contact() {
       </div>
       <section id="contact" className="container">
         <h1 className="sectionTitle">Contact</h1>
+
         <div className="message">
           <form onSubmit={onSubmit}>
             <div className="formGroup">
@@ -90,10 +91,12 @@ function Contact() {
                 required
               ></textarea>
             </div>
-            <input className="btn" type="submit" value="Submit" />
+            <input className="btn hover" type="submit" value="Submit" />
           </form>
           <span>{result}</span>
-          <Lottie options={defaultOption} height={400} width={400} />
+          <div className="lottie">
+            <Lottie options={defaultOption} height={300} width={300} />
+          </div>
         </div>
       </section>
     </>

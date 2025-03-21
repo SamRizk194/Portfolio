@@ -57,6 +57,7 @@ button:active {
   top: 75px;
   right: 75px;
   width: 25px;
+  z-index: 100;
 }
 
 .colorMode:hover {
