@@ -68,10 +68,9 @@ textarea {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
 }
 
-span {
+.green {
   font-family: "Rubik", sans-serif;
   color: rgb(79, 193, 83);
-  margin-top: 20px !important;
 }
 
 .lottie {

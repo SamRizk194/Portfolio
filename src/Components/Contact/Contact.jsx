@@ -93,7 +93,7 @@ function Contact() {
               </div>
               <input className="btn hover" type="submit" value="Submit" />
             </form>
-            <span>{result}</span>
+            <span className="green">{result}</span>
           </div>
           <div className="lottie">
             <Lottie options={defaultOption} height={300} width={300} />
