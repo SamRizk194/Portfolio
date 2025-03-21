@@ -54,7 +54,8 @@ button:active {
 
 .colorMode {
   position: absolute;
-  right: 0;
+  top: 75px;
+  right: 75px;
   width: 25px;
 }
 
