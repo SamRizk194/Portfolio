@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import Typed from "typed.js";
 import "./Hero.css";
-import heroImg from "../../assets/hero-img.png";
 import sunIcon from "../../assets/sun.svg";
 import moonIcon from "../../assets/moon.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -13,10 +12,21 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import CV from "../../assets/cv.pdf";
 import { useTheme } from "../../common/ThemeContext";
+import Lottie from "react-lottie";
+import animationData from "../../animation/dev.json";
 
 function Hero() {
   const { theme, toggleTheme } = useTheme();
   const typedElement = useRef(null);
+
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
 
   const hVariant = {
     hidden: {
@@ -95,7 +105,12 @@ function Hero() {
   return (
     <section className="containerr">
       <div className="colorModeContainer">
-        <img src={heroImg} className="hero" alt="img" />
+        <Lottie
+          options={defaultOptions}
+          height={400}
+          width={400}
+          className="hero"
+        />
         <img
           src={theme === "light" ? sunIcon : moonIcon}
           className="colorMode"

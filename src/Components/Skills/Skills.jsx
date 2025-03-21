@@ -11,81 +11,96 @@ import F_ramer from "../../assets/framer.svg";
 import G_it from "../../assets/git.png";
 import G_ithub from "../../assets/github.webp";
 import F_awesome from "../../assets/font-awesome.png";
+import Lottie from "react-lottie";
+import animationData1 from "../../../src/animation/arrow.json";
 
 function Skills() {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData1,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   return (
-    <section className="skills-section" id="skills">
-      <div className="skills-header">
-        <h2 className="skills-title">
-          Skills <span>&amp;</span> Tools
-        </h2>
-        <p className="skills-subtitle">
-          I Work Hard To Improve My Skills Regularly
-        </p>
+    <>
+      <div className="arrow">
+        <Lottie options={defaultOptions} height={400} width={400} />
       </div>
-
-      <div className="skills-list">
-        <div className="skill-card">
-          <img src={H_tml} alt="HTML" className="skill-logo" />
-          <h3 className="skill-name">HTML</h3>
+      <section className="skills-section" id="skills">
+        <div className="skills-header">
+          <h2 className="skills-title">
+            Skills <span>&amp;</span> Tools
+          </h2>
+          <p className="skills-subtitle">
+            I Work Hard To Improve My Skills Regularly
+          </p>
         </div>
 
-        <div className="skill-card">
-          <img src={C_ss} className="skill-logo" alt="css" />
-          <h3 className="skill-name">CSS</h3>
-        </div>
+        <div className="skills-list">
+          <div className="skill-card">
+            <img src={H_tml} alt="HTML" className="skill-logo" />
+            <h3 className="skill-name">HTML</h3>
+          </div>
 
-        <div className="skill-card">
-          <img src={B_ootstrap} alt="Bootstrap" className="skill-logo" />
-          <h3 className="skill-name">Bootstrap</h3>
-        </div>
+          <div className="skill-card">
+            <img src={C_ss} className="skill-logo" alt="css" />
+            <h3 className="skill-name">CSS</h3>
+          </div>
 
-        <div className="skill-card">
-          <img src={J_s} alt="js" className="skill-logo" />
-          <h3 className="skill-name">JavaScript</h3>
-        </div>
+          <div className="skill-card">
+            <img src={B_ootstrap} alt="Bootstrap" className="skill-logo" />
+            <h3 className="skill-name">Bootstrap</h3>
+          </div>
 
-        <div className="skill-card">
-          <img src={R_eact} alt="react" className="skill-logo" />
-          <h3 className="skill-name">React JS</h3>
-        </div>
+          <div className="skill-card">
+            <img src={J_s} alt="js" className="skill-logo" />
+            <h3 className="skill-name">JavaScript</h3>
+          </div>
 
-        <div className="skill-card">
-          <img src={H_ooks} alt="hooks" className="skill-logo" />
-          <h3 className="skill-name">React Hooks</h3>
-        </div>
+          <div className="skill-card">
+            <img src={R_eact} alt="react" className="skill-logo" />
+            <h3 className="skill-name">React JS</h3>
+          </div>
 
-        <div className="skill-card">
-          <img src={R_edux} alt="redux" className="skill-logo" />
-          <h3 className="skill-name">Redux Toolkit</h3>
-        </div>
+          <div className="skill-card">
+            <img src={H_ooks} alt="hooks" className="skill-logo" />
+            <h3 className="skill-name">React Hooks</h3>
+          </div>
 
-        <div className="skill-card">
-          <img src={R_outer} alt="router" className="skill-logo" />
-          <h3 className="skill-name">React Router</h3>
-        </div>
+          <div className="skill-card">
+            <img src={R_edux} alt="redux" className="skill-logo" />
+            <h3 className="skill-name">Redux Toolkit</h3>
+          </div>
 
-        <div className="skill-card">
-          <img src={F_awesome} alt="fa" className="skill-logo" />
-          <h3 className="skill-name">Font Awesome</h3>
-        </div>
+          <div className="skill-card">
+            <img src={R_outer} alt="router" className="skill-logo" />
+            <h3 className="skill-name">React Router</h3>
+          </div>
 
-        <div className="skill-card">
-          <img src={F_ramer} alt="framer" className="skill-logo" />
-          <h3 className="skill-name">Framer Motion</h3>
-        </div>
+          <div className="skill-card">
+            <img src={F_awesome} alt="fa" className="skill-logo" />
+            <h3 className="skill-name">Font Awesome</h3>
+          </div>
 
-        <div className="skill-card">
-          <img src={G_it} alt="git" className="skill-logo" />
-          <h3 className="skill-name">Git</h3>
-        </div>
+          <div className="skill-card">
+            <img src={F_ramer} alt="framer" className="skill-logo" />
+            <h3 className="skill-name">Framer Motion</h3>
+          </div>
 
-        <div className="skill-card">
-          <img src={G_ithub} alt="github" className="skill-logo" />
-          <h3 className="skill-name">Git Hub</h3>
+          <div className="skill-card">
+            <img src={G_it} alt="git" className="skill-logo" />
+            <h3 className="skill-name">Git</h3>
+          </div>
+
+          <div className="skill-card">
+            <img src={G_ithub} alt="github" className="skill-logo" />
+            <h3 className="skill-name">Git Hub</h3>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
 

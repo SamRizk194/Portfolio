@@ -38,6 +38,8 @@
 .project-card-title {
   font-size: 1.5rem;
   margin-bottom: 10px;
+  text-transform: none;
+  text-align: center;
 }
 
 .project-card-description {
