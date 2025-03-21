@@ -27,8 +27,8 @@ a {
 }
 
 button {
-  background-color: var(--btn-color);
-  color: var(--btn-text-color);
+  background-color: var(--text-color);
+  color: var(--background-color);
   border: none;
   border-radius: 20px;
   width: 126px;

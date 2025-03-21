@@ -66,7 +66,7 @@ function Contact() {
             required
           ></textarea>
         </div>
-        <input className="hover btn" type="submit" value="Submit" />
+        <input className="btn" type="submit" value="Submit" />
       </form>
       <span>{result}</span>
     </section>

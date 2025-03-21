@@ -38,9 +38,9 @@ textarea {
   color: var(--form-text-color);
 }
 
-input[type="submit"] {
-  background-color: var(--btn-color);
-  color: var(--btn-text-color);
+.btn {
+  background-color: var(--text-color);
+  color: var(--background-color);
   border: none;
   border-radius: 20px;
   width: 126px;
@@ -52,11 +52,11 @@ input[type="submit"] {
   margin: auto;
 }
 
-input[type="submit"]:hover {
+.btn:hover {
   transform: scale(1.05);
 }
 
-input[type="submit"]:active {
+.btn:active {
   transform: translateY(2px);
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
 }
@@ -64,6 +64,7 @@ input[type="submit"]:active {
 span {
   font-family: "Rubik", sans-serif;
 }
+
 @media (width >= 800px) {
   textarea,
   input:not([type="submit"]) {
