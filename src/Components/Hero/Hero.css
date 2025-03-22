@@ -95,16 +95,9 @@ button:active {
   font-weight: bold;
 }
 
-.fa-link:hover {
-  transform: translate(
-    1.2px,
-    1.2px
-  ); /* حركة بمقدار 1.2 بكسل في كلا الاتجاهين */
-}
-
 @media (max-width: 800px) {
   .containerr {
-    margin-top: 135px;
+    margin-top: -50px;
     margin-left: auto;
     margin-right: auto;
   }
