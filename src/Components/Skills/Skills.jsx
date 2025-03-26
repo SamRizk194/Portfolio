@@ -10,7 +10,8 @@ import H_ooks from "../../assets/hooks.png";
 import F_ramer from "../../assets/framer.svg";
 import G_it from "../../assets/git.png";
 import G_ithub from "../../assets/github.webp";
-import N_ode from "../../assets/node.png";
+import N_pm from "../../assets/npm.svg";
+import V_ite from "../../assets/vite.svg";
 import F_awesome from "../../assets/font-awesome.png";
 import L_ottie from "../../assets/lottie.webp";
 import Lottie from "react-lottie";
@@ -87,8 +88,13 @@ function Skills() {
           </div>
 
           <div className="skill-card">
-            <img src={N_ode} alt="node" className="skill-logo" />
-            <h3 className="skill-name">Node JS</h3>
+            <img src={N_pm} alt="vite" className="skill-logo" />
+            <h3 className="skill-name">NPM</h3>
+          </div>
+
+          <div className="skill-card">
+            <img src={V_ite} alt="vite" className="skill-logo" />
+            <h3 className="skill-name">Vite</h3>
           </div>
 
           <div className="skill-card">
