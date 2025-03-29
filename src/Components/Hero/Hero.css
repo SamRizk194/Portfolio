@@ -79,7 +79,7 @@ button:active {
   max-width: 24ch;
   text-align: center;
   margin: 0 auto;
-  height: 55px;
+  height: 80px;
 }
 
 .info {
@@ -107,6 +107,11 @@ button:active {
   font-weight: bold;
 }
 
+.typed-cursor {
+  font-weight: bold;
+  animation: blink 0.7s step-end infinite;
+}
+
 @media (max-width: 800px) {
   .containerr {
     margin-top: -35px;
@@ -132,5 +137,11 @@ button:active {
   .containerr .hero {
     max-width: 400px;
     width: 400px;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
   }
 }

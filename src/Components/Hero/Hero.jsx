@@ -93,6 +93,7 @@ function Hero() {
       backDelay: 1000,
       loop: true,
       showCursor: true,
+      cursorChar: "|",
     };
 
     const typed = new Typed(typedElement.current, options);
