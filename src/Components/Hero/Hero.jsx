@@ -148,6 +148,7 @@ function Hero() {
             animate="visible"
           >
             <FontAwesomeIcon
+              className="fa-icons"
               icon={faGithub}
               size="2x"
               style={{ color: theme === "light" ? "black" : "white" }}
@@ -162,6 +163,7 @@ function Hero() {
             animate="visible"
           >
             <FontAwesomeIcon
+              className="fa-icons"
               icon={faLinkedin}
               size="2x"
               style={{ color: theme === "light" ? "black" : "white" }}
@@ -176,6 +178,7 @@ function Hero() {
             animate="visible"
           >
             <FontAwesomeIcon
+              className="fa-icons"
               icon={faFacebook}
               size="2x"
               style={{ color: theme === "light" ? "black" : "white" }}

@@ -21,6 +21,17 @@ span a img {
   width: 30px;
 }
 
+.fa-icons {
+  padding-bottom: 5px;
+  border: 3px solid var(--background-color);
+}
+
+.fa-icons:hover {
+  transform: translateY(-3px);
+  padding-bottom: 5px;
+  border-bottom: 3px solid var(--text-color);
+}
+
 a {
   width: fit-content;
   align-self: center;
@@ -68,6 +79,7 @@ button:active {
   max-width: 24ch;
   text-align: center;
   margin: 0 auto;
+  height: 55px;
 }
 
 .info {
