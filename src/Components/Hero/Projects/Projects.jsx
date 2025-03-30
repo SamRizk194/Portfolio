@@ -28,28 +28,28 @@ function Projects() {
           <ProjectCard
             src={e_com}
             name="E-Commerce"
-            description="This is the first project. It includes features like X, Y, and Z."
+            description="An e-commerce site built with React, Vite, and Redux Toolkit, featuring a smooth shopping cart, responsive design, and fast performance."
             linkOne="https://sam-e-commerce.netlify.app/"
             linkTwo="https://github.com/SamRizk194/My-E-Commerce"
           />
           <ProjectCard
             src={foodera}
             name="Foodera"
-            description="This is the second project. It's a cool project with features A, B, and C."
+            description=" A React-based website for exploring food and recipes, built with a responsive design using Bootstrap and React Bootstrap components."
             linkOne="https://samfoodera.netlify.app/"
             linkTwo="https://github.com/SamRizk194/Foodera"
           />
           <ProjectCard
             src={edusity}
             name="Edusity"
-            description="This is the third project. It offers amazing features such as P, Q, and R."
+            description="A website built with React and Vite, featuring smooth scrolling, Web3 form submissions, and custom styling using CSS and React Hooks for state management."
             linkOne="https://sam-edusity.netlify.app/"
             linkTwo="https://github.com/SamRizk194/Edusity"
           />
           <ProjectCard
             src={bondi}
             name="Bondi"
-            description="This is the fourth project. It has functionalities like M, N, and O."
+            description="A responsive website built with HTML, CSS, and Bootstrap, featuring Font Awesome icons for improved design and user experience."
             linkOne="https://bondi-project.netlify.app/"
             linkTwo="https://github.com/SamRizk194/Bondi"
           />

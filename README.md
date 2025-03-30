@@ -31,3 +31,4 @@ You can view the live version of my portfolio here: [Live Demo](https://sameh-ri
 ## Conclusion
 
 This portfolio reflects my skills and passion as a front-end developer. Feel free to explore my projects and connect with me!
+
