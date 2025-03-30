@@ -10,7 +10,7 @@ import {
   faLinkedin,
   faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
-import CV from "../../assets/cv.pdf";
+import CV from "../../assets/Sameh-rizk-Frontend.pdf";
 import { useTheme } from "../../common/ThemeContext";
 import Lottie from "react-lottie";
 import animationData from "../../animation/dev.json";
