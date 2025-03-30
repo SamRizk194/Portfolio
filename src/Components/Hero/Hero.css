@@ -110,6 +110,7 @@ button:active {
 .typed-cursor {
   font-weight: bold;
   animation: blink 0.7s step-end infinite;
+  color: var(--text-color);
 }
 
 @media (max-width: 800px) {
