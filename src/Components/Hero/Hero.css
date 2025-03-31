@@ -98,12 +98,12 @@ button:active {
 }
 
 .firstName {
-  font-size: 2.5rem;
+  font-size: 42px;
   font-weight: bold;
 }
 
 .lastName {
-  font-size: 2.5rem;
+  font-size: 42px;
   font-weight: bold;
 }
 

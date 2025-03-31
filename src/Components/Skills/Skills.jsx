@@ -89,7 +89,7 @@ function Skills() {
 
           <div className="skill-card">
             <img src={N_pm} alt="vite" className="skill-logo" />
-            <h3 className="skill-name">Npm</h3>
+            <h3 className="skill-name">npm</h3>
           </div>
 
           <div className="skill-card">

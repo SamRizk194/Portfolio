@@ -8,8 +8,9 @@
 }
 
 .skills-title {
-  font-size: 2rem;
   font-weight: bold;
+  font-family: "Rubik", sans-serif;
+  font-size: 40px;
 }
 
 .skills-subtitle {
