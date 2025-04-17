@@ -59,5 +59,4 @@
 
 .fa-icon:hover {
   transform: translateY(-3px);
-  border-bottom: 1px solid var(--text-color);
 }
