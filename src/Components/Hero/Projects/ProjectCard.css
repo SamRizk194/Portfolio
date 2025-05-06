@@ -60,18 +60,22 @@
 .fa-icon:hover {
   transform: translateY(-3px);
 }
+
+/*media*/
 @media (max-width: 800px) {
   .project-card {
-    width: 19.5rem;
+    width: 20rem;
   }
   .project-card-description {
     margin-bottom: 25px;
   }
-  .project-card-title {
-    margin-bottom: 7px;
-  }
+
   .project-card-img-container {
     width: 100%;
+  }
+
+  .project-card-description {
+    font-size: 0.75rem;
   }
   .project-card:hover .project-card-img {
     transform: translateY(-485px);

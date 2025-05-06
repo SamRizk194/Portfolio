@@ -67,7 +67,7 @@ function Projects() {
           <ProjectCard
             src={grocify}
             name="Grocify"
-            description="A responsive React + Vite project styled with Tailwind CSS, developed as a training exercise in modern frontend design and responsive design."
+            description="A responsive HTML page styled with Tailwind CSS, adapting to different screen sizes, with a navigation bar that turns into a hamburger menu on smaller screens."
             linkOne="https://sam-tailwind-page.netlify.app/"
             linkTwo="https://github.com/SamRizk194/Tailwind-Page"
           />
