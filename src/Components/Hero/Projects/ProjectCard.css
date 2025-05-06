@@ -28,7 +28,7 @@
   transition: transform 1.5s;
 }
 .project-card:hover .project-card-img {
-  transform: translateY(-750px);
+  transform: translateY(-730px);
 }
 
 .project-card-body {
@@ -67,5 +67,8 @@
 
   .project-card-img-container {
     width: 100%;
+  }
+  .project-card:hover .project-card-img {
+    transform: translateY(-485px);
   }
 }

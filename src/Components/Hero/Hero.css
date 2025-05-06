@@ -27,7 +27,6 @@ span a img {
 }
 
 .fa-icons:hover {
-  transform: translateY(-3px);
   padding-bottom: 5px;
   border-bottom: 3px solid var(--text-color);
 }
