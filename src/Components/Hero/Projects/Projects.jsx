@@ -6,6 +6,7 @@ import edusity from "../../../assets/edusity.png";
 import bondi from "../../../assets/bondi.png";
 import Lottie from "react-lottie";
 import animationData1 from "../../../animation/arrow.json";
+import tailwind from "../../../assets/tailwind.jpg";
 
 function Projects() {
   const defaultOptions = {
@@ -52,6 +53,14 @@ function Projects() {
             description="A responsive website built with HTML, CSS, and Bootstrap, featuring Font Awesome icons for improved design and user experience."
             linkOne="https://bondi-project.netlify.app/"
             linkTwo="https://github.com/SamRizk194/Bondi"
+          />
+
+          <ProjectCard
+            src={tailwind}
+            name="Fylo"
+            description="A responsive React + Vite project styled with Tailwind CSS, developed as a training exercise in modern frontend design and responsive design."
+            linkOne="https://sam-tailwind.netlify.app/"
+            linkTwo="https://github.com/SamRizk194/Tailwind-Practice"
           />
         </div>
       </section>
