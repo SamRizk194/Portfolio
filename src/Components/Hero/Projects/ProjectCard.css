@@ -64,7 +64,12 @@
   .project-card {
     width: 19.5rem;
   }
-
+  .project-card-description {
+    margin-bottom: 25px;
+  }
+  .project-card-title {
+    margin-bottom: 7px;
+  }
   .project-card-img-container {
     width: 100%;
   }
