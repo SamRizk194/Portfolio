@@ -5,11 +5,7 @@ import "./Hero.css";
 import sunIcon from "../../assets/sun.svg";
 import moonIcon from "../../assets/moon.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGithub,
-  faLinkedin,
-  faFacebook,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import CV from "../../assets/Sameh-rizk-Frontend.pdf";
 import { useTheme } from "../../common/ThemeContext";
 import Lottie from "react-lottie";
@@ -166,21 +162,6 @@ function Hero() {
             <FontAwesomeIcon
               className="fa-icons"
               icon={faLinkedin}
-              size="2x"
-              style={{ color: theme === "light" ? "black" : "white" }}
-            />
-          </motion.a>
-          <motion.a
-            href="https://www.facebook.com/sameh.ozmel/"
-            target="_blank"
-            rel="noopener noreferrer"
-            variants={iconVariant}
-            initial="hidden"
-            animate="visible"
-          >
-            <FontAwesomeIcon
-              className="fa-icons"
-              icon={faFacebook}
               size="2x"
               style={{ color: theme === "light" ? "black" : "white" }}
             />

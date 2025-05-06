@@ -3,6 +3,7 @@ import H_tml from "../../assets/html.png";
 import C_ss from "../../assets/css.png";
 import J_s from "../../assets/js.png";
 import B_ootstrap from "../../assets/bootstrap.png";
+import T_ailwind from "../../assets/tailwind.png";
 import R_eact from "../../assets/react.png";
 import R_edux from "../../assets/redux.webp";
 import R_outer from "../../assets/router.webp";
@@ -55,6 +56,11 @@ function Skills() {
           <div className="skill-card">
             <img src={B_ootstrap} alt="Bootstrap" className="skill-logo" />
             <h3 className="skill-name">Bootstrap</h3>
+          </div>
+
+          <div className="skill-card">
+            <img src={T_ailwind} alt="tailwind" className="skill-logo" />
+            <h3 className="skill-name">Tailwind</h3>
           </div>
 
           <div className="skill-card">

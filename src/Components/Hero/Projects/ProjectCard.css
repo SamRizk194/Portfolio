@@ -60,3 +60,12 @@
 .fa-icon:hover {
   transform: translateY(-3px);
 }
+@media (max-width: 800px) {
+  .project-card {
+    width: 18rem;
+  }
+
+  .project-card-img-container {
+    width: 100%;
+  }
+}
