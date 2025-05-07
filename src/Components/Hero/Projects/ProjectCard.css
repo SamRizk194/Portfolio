@@ -68,16 +68,13 @@
   }
   .project-card-description {
     margin-bottom: 25px;
+    font-size: 15px !important;
   }
 
   .project-card-img-container {
     width: 100%;
   }
-
-  .project-card-description {
-    font-size: 0.3rem;
-  }
-  .project-card:hover .project-card-img {
-    transform: translateY(-485px);
-  }
+}
+.project-card:hover .project-card-img {
+  transform: translateY(-485px);
 }
