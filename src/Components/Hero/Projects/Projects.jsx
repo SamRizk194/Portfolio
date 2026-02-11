@@ -1,13 +1,15 @@
 import "./Projects.css";
 import ProjectCard from "./ProjectCard";
 import e_com from "../../../assets/e-com.png";
+import agency_ai from "../../../assets/agency_ai.png";
+
 import foodera from "../../../assets/foodera.png";
 import edusity from "../../../assets/edusity.png";
 import bondi from "../../../assets/bondi.png";
+import grocify from "../../../assets/grocify.png";
 import Lottie from "react-lottie";
 import animationData1 from "../../../animation/arrow.json";
 import tailwind from "../../../assets/tailwind.jpg";
-import grocify from "../../../assets/grocify.png";
 
 function Projects() {
   const defaultOptions = {
@@ -33,6 +35,13 @@ function Projects() {
             description="An e-commerce site built with React, Vite, and Redux Toolkit, featuring a smooth shopping cart, responsive design, and fast performance."
             linkOne="https://sam-e-commerce.netlify.app/"
             linkTwo="https://github.com/SamRizk194/My-E-Commerce"
+          />
+          <ProjectCard
+            src={agency_ai}
+            name="Agenci.Ai"
+            description="An interactive agency website built with React and Tailwind CSS, featuring smooth animations, responsive design, and seamless contact form integration with Web3Forms."
+            linkOne="https://sam-agenciai.netlify.app/"
+            linkTwo="https://github.com/SamRizk194/AGENCY.AI"
           />
           <ProjectCard
             src={foodera}
