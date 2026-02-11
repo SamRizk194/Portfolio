@@ -5,7 +5,11 @@ import "./Hero.css";
 import sunIcon from "../../assets/sun.svg";
 import moonIcon from "../../assets/moon.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faFacebook,
+  faGithub,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 import CV from "../../assets/Sameh-rizk-Frontend.pdf";
 import { useTheme } from "../../common/ThemeContext";
 import Lottie from "react-lottie";
@@ -137,6 +141,21 @@ function Hero() {
 
         <span>
           <motion.a
+            href="https://www.linkedin.com/in/sameh-rizk-abb5ba258"
+            target="_blank"
+            rel="noopener noreferrer"
+            variants={iconVariant}
+            initial="hidden"
+            animate="visible"
+          >
+            <FontAwesomeIcon
+              className="fa-icons"
+              icon={faLinkedin}
+              size="2x"
+              style={{ color: theme === "light" ? "black" : "white" }}
+            />
+          </motion.a>
+          <motion.a
             href="https://github.com/SamRizk194"
             target="_blank"
             rel="noopener noreferrer"
@@ -152,7 +171,7 @@ function Hero() {
             />
           </motion.a>
           <motion.a
-            href="https://www.linkedin.com/in/sameh-rizk-abb5ba258"
+            href="https://www.facebook.com/share/1GCB3g1Vtk/"
             target="_blank"
             rel="noopener noreferrer"
             variants={iconVariant}
@@ -161,7 +180,7 @@ function Hero() {
           >
             <FontAwesomeIcon
               className="fa-icons"
-              icon={faLinkedin}
+              icon={faFacebook}
               size="2x"
               style={{ color: theme === "light" ? "black" : "white" }}
             />
