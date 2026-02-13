@@ -1,7 +1,3 @@
-#projects {
-  margin-top: 50px;
-}
-
 .projectsContainer {
   display: flex;
   flex-wrap: wrap;

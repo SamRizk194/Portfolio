@@ -2,7 +2,6 @@ import "./Projects.css";
 import ProjectCard from "./ProjectCard";
 import e_com from "../../../assets/e-com.png";
 import agency_ai from "../../../assets/agency_ai.png";
-
 import foodera from "../../../assets/foodera.png";
 import edusity from "../../../assets/edusity.png";
 import bondi from "../../../assets/bondi.png";
@@ -20,13 +19,13 @@ function Projects() {
       preserveAspectRatio: "xMidYMid slice",
     },
   };
-
   return (
     <>
       <div className="arrow">
         <Lottie options={defaultOptions} height={400} width={400} />
       </div>
-      <section id="projects" className="container">
+      <div id="projects" className="invisible"></div>
+      <section className="container">
         <h1 className="sectionTitle">Projects</h1>
         <div className="projectsContainer">
           <ProjectCard
@@ -39,7 +38,7 @@ function Projects() {
           <ProjectCard
             src={agency_ai}
             name="Agenci.Ai"
-            description="An interactive agency website built with React and Tailwind CSS, featuring smooth animations, responsive design, and seamless contact form integration with Web3Forms."
+            description="Modern agency website built with React & Tailwind, fully responsive with smooth animations and Web3Forms."
             linkOne="https://sam-agenciai.netlify.app/"
             linkTwo="https://github.com/SamRizk194/AGENCY.AI"
           />

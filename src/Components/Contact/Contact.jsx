@@ -51,7 +51,7 @@ function Contact() {
       <div className="arrow">
         <Lottie options={defaultOptions} height={400} width={400} />
       </div>
-      <section id="contact" className="container">
+      <section className="container" id="contact-us">
         <h1 className="sectionTitle">Contact</h1>
         <div className="message">
           <div>

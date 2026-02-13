@@ -36,44 +36,6 @@ a {
   align-self: center;
 }
 
-button {
-  background-color: var(--text-color);
-  color: var(--background-color);
-  border: none;
-  border-radius: 20px;
-  width: 126px;
-  height: 50px;
-  font-size: 20px;
-  font-weight: bold;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
-}
-
-button:hover {
-  transform: scale(1.05);
-}
-
-button:active {
-  transform: translateY(2px);
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
-}
-
-.colorModeContainer {
-  position: relative;
-}
-
-.colorMode {
-  position: absolute;
-  top: 75px;
-  right: 35px;
-  width: 25px;
-  z-index: 100;
-}
-
-.colorMode:hover {
-  cursor: pointer;
-}
-
 .description {
   max-width: 24ch;
   text-align: center;
