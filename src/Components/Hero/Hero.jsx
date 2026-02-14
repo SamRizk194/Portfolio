@@ -82,94 +82,91 @@ function Hero() {
   }, []);
 
   return (
-    <>
-      <div id="home" className="invisible"></div>
+    <section className="containerr scroll-mt-20" id="home">
+      <div className="colorModeContainer">
+        <Lottie
+          options={defaultOptions}
+          height={400}
+          width={400}
+          className="hero"
+        />
+      </div>
 
-      <section className="containerr">
-        <div className="colorModeContainer">
-          <Lottie
-            options={defaultOptions}
-            height={400}
-            width={400}
-            className="hero"
-          />
-        </div>
+      <div className="info">
+        <motion.h1
+          variants={hVariant}
+          initial="hidden"
+          animate="visible"
+          className="name"
+        >
+          <motion.span variants={spanVariant} className="firstName">
+            Sameh
+          </motion.span>
 
-        <div className="info">
-          <motion.h1
-            variants={hVariant}
+          <motion.span variants={spanVariant} className="lastName">
+            Rizk
+          </motion.span>
+        </motion.h1>
+
+        <motion.h2 variants={h2Variant} initial="hidden" animate="visible">
+          Frontend Developer
+        </motion.h2>
+
+        <span>
+          <motion.a
+            href="https://www.linkedin.com/in/sameh-rizk-abb5ba258"
+            target="_blank"
+            rel="noopener noreferrer"
+            variants={iconVariant}
             initial="hidden"
             animate="visible"
-            className="name"
           >
-            <motion.span variants={spanVariant} className="firstName">
-              Sameh
-            </motion.span>
+            <FontAwesomeIcon
+              className="fa-icons"
+              icon={faLinkedin}
+              size="2x"
+              style={{ color: theme === "light" ? "black" : "white" }}
+            />
+          </motion.a>
 
-            <motion.span variants={spanVariant} className="lastName">
-              Rizk
-            </motion.span>
-          </motion.h1>
+          <motion.a
+            href="https://github.com/SamRizk194"
+            target="_blank"
+            rel="noopener noreferrer"
+            variants={iconVariant}
+            initial="hidden"
+            animate="visible"
+          >
+            <FontAwesomeIcon
+              className="fa-icons"
+              icon={faGithub}
+              size="2x"
+              style={{ color: theme === "light" ? "black" : "white" }}
+            />
+          </motion.a>
 
-          <motion.h2 variants={h2Variant} initial="hidden" animate="visible">
-            Frontend Developer
-          </motion.h2>
+          <motion.a
+            href="https://www.facebook.com/share/1GCB3g1Vtk/"
+            target="_blank"
+            rel="noopener noreferrer"
+            variants={iconVariant}
+            initial="hidden"
+            animate="visible"
+          >
+            <FontAwesomeIcon
+              className="fa-icons"
+              icon={faFacebook}
+              size="2x"
+              style={{ color: theme === "light" ? "black" : "white" }}
+            />
+          </motion.a>
+        </span>
 
-          <span>
-            <motion.a
-              href="https://www.linkedin.com/in/sameh-rizk-abb5ba258"
-              target="_blank"
-              rel="noopener noreferrer"
-              variants={iconVariant}
-              initial="hidden"
-              animate="visible"
-            >
-              <FontAwesomeIcon
-                className="fa-icons"
-                icon={faLinkedin}
-                size="2x"
-                style={{ color: theme === "light" ? "black" : "white" }}
-              />
-            </motion.a>
+        <p className="description" ref={typedElement}></p>
 
-            <motion.a
-              href="https://github.com/SamRizk194"
-              target="_blank"
-              rel="noopener noreferrer"
-              variants={iconVariant}
-              initial="hidden"
-              animate="visible"
-            >
-              <FontAwesomeIcon
-                className="fa-icons"
-                icon={faGithub}
-                size="2x"
-                style={{ color: theme === "light" ? "black" : "white" }}
-              />
-            </motion.a>
-
-            <motion.a
-              href="https://www.facebook.com/share/1GCB3g1Vtk/"
-              target="_blank"
-              rel="noopener noreferrer"
-              variants={iconVariant}
-              initial="hidden"
-              animate="visible"
-            >
-              <FontAwesomeIcon
-                className="fa-icons"
-                icon={faFacebook}
-                size="2x"
-                style={{ color: theme === "light" ? "black" : "white" }}
-              />
-            </motion.a>
-          </span>
-
-          <p className="description" ref={typedElement}></p>
-
-          <a href={CV} download>
-            <button
-              className="
+        <a href={CV} download>
+          <button
+            className="
                 bg-[var(--text-color)]
                 text-[var(--background-color)]
                 border-0
@@ -187,13 +184,12 @@ function Hero() {
                 active:scale-[0.98]
                 active:shadow-md
               "
-            >
-              Resume
-            </button>
-          </a>
-        </div>
-      </section>
-    </>
+          >
+            Resume
+          </button>
+        </a>
+      </div>
+    </section>
   );
 }
 

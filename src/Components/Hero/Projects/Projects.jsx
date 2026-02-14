@@ -24,8 +24,7 @@ function Projects() {
       <div className="arrow">
         <Lottie options={defaultOptions} height={400} width={400} />
       </div>
-      <div id="projects" className="invisible"></div>
-      <section className="container">
+      <section className="container scroll-mt-20" id="projects">
         <h1 className="sectionTitle">Projects</h1>
         <div className="projectsContainer">
           <ProjectCard

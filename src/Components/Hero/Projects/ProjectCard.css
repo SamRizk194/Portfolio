@@ -1,14 +1,28 @@
+.projectsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 40px;
+  justify-content: center;
+}
+
+.projectsContainer > * {
+  flex: 1 1 100%;
+  min-width: 200px;
+  max-width: 100%;
+}
+
 .project-card {
-  width: 22rem;
   border: 1px solid #ddd;
   border-radius: 24px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 25px;
-  transition: transform 0.3s ease-in-out;
+  margin: 12px;
   height: 485px;
-  transition: 0.5s;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.5s ease-in-out;
 }
 
 .project-card-img-container {
@@ -16,38 +30,39 @@
   width: 100%;
   height: 280px;
   overflow: hidden;
-  margin: 0px !important;
-  justify-content: center;
 }
 
 .project-card-img {
   width: 100%;
   height: auto;
-  justify-content: center;
-  min-block-size: -webkit-fill-available;
   transition: transform 1.5s;
 }
+
 .project-card:hover .project-card-img {
-  transform: translateY(-730px);
+  transform: translateY(-485px);
 }
 
 .project-card-body {
   padding: 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project-card-title {
   font-size: 1.5rem;
   margin-bottom: 10px;
-  text-transform: none;
   text-align: center;
 }
 
 .project-card-description {
   font-size: 1rem;
   margin-bottom: 20px;
-  font-family: "arial";
+  font-family: Arial, sans-serif;
   font-weight: lighter;
   height: 75px;
+  text-align: center;
 }
 
 .project-card-links a {
@@ -60,16 +75,30 @@
   transform: translateY(-3px);
 }
 
-/*media*/
-@media (max-width: 800px) {
-  .project-card {
-    width: 20rem;
-  }
-  .project-card-description {
-    margin-bottom: 25px;
-    font-size: 15px !important;
+@media (min-width: 768px) {
+  .projectsContainer > * {
+    flex: 1 1 40%;
+    max-width: 40%;
   }
 }
-.project-card:hover .project-card-img {
-  transform: translateY(-485px);
+
+@media (min-width: 1024px) {
+  .projectsContainer > * {
+    flex: 1 1 26%;
+    max-width: 26%;
+  }
+}
+
+@media (max-width: 800px) {
+  .project-card {
+    flex: 1 1 90%;
+    max-width: 90%;
+    height: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .project-card-description {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
 }

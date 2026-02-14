@@ -32,8 +32,7 @@ function Skills() {
       <div className="arrow">
         <Lottie options={defaultOptions} height={400} width={400} />
       </div>
-      <div id="skills" className="invisible"></div>
-      <section className="skills-section" id="skill">
+      <section className="skills-section scroll-mt-20" id="skills">
         <div className="skills-header">
           <h2 className="skills-title">
             Skills <span>&amp;</span> Tools

@@ -1,18 +1,7 @@
 .projectsContainer {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   padding-top: 40px;
-  grid-template-columns: 1fr;
-}
-
-@media (min-width: 768px) {
-  .projectsContainer {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .projectsContainer {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  justify-content: center;
 }
