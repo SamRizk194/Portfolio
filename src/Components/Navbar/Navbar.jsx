@@ -13,7 +13,7 @@ function Navbar() {
 
   const textColor = theme === "dark" ? "text-white" : "text-gray-700";
 
-  const sidebarBg = theme === "dark" ? "bg-[#1a1a1a]" : "bg-white";
+  const sidebarBg = theme === "dark" ? "bg-[#101010]" : "bg-white";
 
   return (
     <div
