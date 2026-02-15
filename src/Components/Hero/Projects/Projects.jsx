@@ -51,7 +51,7 @@ function Projects() {
           <ProjectCard
             src={edusity}
             name="Edusity"
-            description="A website built with React and Vite, featuring smooth scrolling, Web3 form submissions, and custom styling using CSS and React Hooks for state management."
+            description="A React and Vite website with smooth scrolling, Web3 form submissions, custom CSS styling, and React Hooks for state management."
             linkOne="https://sam-edusity.netlify.app/"
             linkTwo="https://github.com/SamRizk194/Edusity"
           />

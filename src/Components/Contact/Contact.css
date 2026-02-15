@@ -42,6 +42,11 @@ textarea {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+.formGroup input,
+.formGroup textarea {
+  background-color: var(--pcbbg);
+}
+
 ::placeholder {
   color: var(--form-text-color);
 }
