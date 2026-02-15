@@ -58,3 +58,11 @@
   font-weight: 500;
   margin-top: 10px;
 }
+
+@media (max-width: 400px) {
+  .skills-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}

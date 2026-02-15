@@ -12,13 +12,16 @@ function Navbar() {
   const { theme, toggleTheme } = useTheme();
 
   const textColor = theme === "dark" ? "text-white" : "text-gray-700";
-  const sidebarBg = theme === "dark" ? "bg-gray-900" : "bg-white";
+
+  const sidebarBg = theme === "dark" ? "bg-[#1a1a1a]/70" : "bg-white/50";
 
   return (
     <div
       className={`flex justify-between items-center px-4 sm:px-12 lg:px-24 xl:px-40
       py-4 sticky top-0 z-20 backdrop-blur-xl font-medium
-      ${theme === "dark" ? "bg-gray-900/70" : "bg-white/50"}`}
+      ${
+        theme === "dark" ? "bg-[#101010]/70" : "bg-transparent sm:bg-white/50"
+      }`}
     >
       <div className="w-32 sm:w-40"></div>
 

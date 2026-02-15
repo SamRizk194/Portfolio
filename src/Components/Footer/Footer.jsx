@@ -5,7 +5,7 @@ function Footer() {
   return (
     <section id="footer" className="container">
       <p>
-        &copy; 2025 Sameh Rizk. <br />
+        &copy; 2026 Sameh_Rizk. <br />
         All rights reserved.
       </p>
     </section>
