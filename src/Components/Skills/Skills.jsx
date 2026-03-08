@@ -2,6 +2,8 @@ import "./Skills.css";
 import H_tml from "../../assets/html.png";
 import C_ss from "../../assets/css.png";
 import J_s from "../../assets/js.png";
+import T_sc from "../../assets/tsc.png";
+
 import B_ootstrap from "../../assets/bootstrap.png";
 import T_ailwind from "../../assets/tailwind.png";
 import R_eact from "../../assets/react.png";
@@ -66,6 +68,10 @@ function Skills() {
           <div className="skill-card">
             <img src={J_s} alt="js" className="skill-logo" />
             <h3 className="skill-name">JavaScript</h3>
+          </div>
+          <div className="skill-card">
+            <img src={T_sc} alt="tsc" className="skill-logo" />
+            <h3 className="skill-name">TypeScript</h3>
           </div>
 
           <div className="skill-card">

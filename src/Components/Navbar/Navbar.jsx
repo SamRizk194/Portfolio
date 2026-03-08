@@ -76,7 +76,7 @@ function Navbar() {
     text-sm
     max-sm:hidden
     flex items-center gap-2
-    bg-[var(--text-color)]
+    bg-[#00FF08]
     text-[var(--background-color)]
     px-6 py-2
     rounded-[20px]

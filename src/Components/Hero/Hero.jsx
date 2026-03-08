@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react";
-import { motion } from "framer-motion";
 import Typed from "typed.js";
 import "./Hero.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -23,41 +22,6 @@ function Hero() {
     animationData: animationData,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
-    },
-  };
-
-  const hVariant = {
-    hidden: { opacity: 0, x: 100 },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: { duration: 1 },
-    },
-  };
-
-  const spanVariant = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: { duration: 1, ease: "easeInOut" },
-    },
-  };
-
-  const iconVariant = {
-    hidden: { opacity: 0, x: 100 },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: { duration: 1 },
-    },
-  };
-
-  const h2Variant = {
-    hidden: { opacity: 0, x: -100 },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: { duration: 1 },
     },
   };
 
@@ -93,33 +57,18 @@ function Hero() {
       </div>
 
       <div className="info">
-        <motion.h1
-          variants={hVariant}
-          initial="hidden"
-          animate="visible"
-          className="name"
-        >
-          <motion.span variants={spanVariant} className="firstName">
-            Sameh
-          </motion.span>
+        <h1>
+          <span className="firstName">Sameh</span>
 
-          <motion.span variants={spanVariant} className="lastName">
-            Rizk
-          </motion.span>
-        </motion.h1>
+          <span className="lastName">Rizk</span>
+        </h1>
 
-        <motion.h2 variants={h2Variant} initial="hidden" animate="visible">
-          Frontend Developer
-        </motion.h2>
+        <h2>Frontend Developer</h2>
 
         <span>
-          <motion.a
+          <a
             href="https://www.linkedin.com/in/sameh-rizk-abb5ba258"
             target="_blank"
-            rel="noopener noreferrer"
-            variants={iconVariant}
-            initial="hidden"
-            animate="visible"
           >
             <FontAwesomeIcon
               className="fa-icons"
@@ -127,39 +76,25 @@ function Hero() {
               size="2x"
               style={{ color: theme === "light" ? "black" : "white" }}
             />
-          </motion.a>
+          </a>
 
-          <motion.a
-            href="https://github.com/SamRizk194"
-            target="_blank"
-            rel="noopener noreferrer"
-            variants={iconVariant}
-            initial="hidden"
-            animate="visible"
-          >
+          <a href="https://github.com/SamRizk194" target="_blank">
             <FontAwesomeIcon
               className="fa-icons"
               icon={faGithub}
               size="2x"
               style={{ color: theme === "light" ? "black" : "white" }}
             />
-          </motion.a>
+          </a>
 
-          <motion.a
-            href="https://www.facebook.com/share/1GCB3g1Vtk/"
-            target="_blank"
-            rel="noopener noreferrer"
-            variants={iconVariant}
-            initial="hidden"
-            animate="visible"
-          >
+          <a href="https://www.facebook.com/share/1GCB3g1Vtk/" target="_blank">
             <FontAwesomeIcon
               className="fa-icons"
               icon={faFacebook}
               size="2x"
               style={{ color: theme === "light" ? "black" : "white" }}
             />
-          </motion.a>
+          </a>
         </span>
 
         <p className="description" ref={typedElement}></p>
@@ -167,7 +102,7 @@ function Hero() {
         <a href={CV} download>
           <button
             className="
-                bg-[var(--text-color)]
+                bg-[#00FF08]
                 text-[var(--background-color)]
                 border-0
                 rounded-[20px]

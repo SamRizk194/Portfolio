@@ -52,7 +52,7 @@ textarea {
 }
 
 .btn {
-  background-color: var(--text-color);
+  background-color: #00ff08;
   color: var(--background-color);
   border: none;
   border-radius: 20px;

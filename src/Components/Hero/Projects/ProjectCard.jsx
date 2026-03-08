@@ -22,7 +22,11 @@ function ProjectCard(props) {
               className="fa-icon"
             />
           </a>
-          <a href={props.linkTwo} className="project-card-link" target="_blank">
+          <a
+            href={props.linkTwo}
+            className="project-card-link "
+            target="_blank"
+          >
             <FontAwesomeIcon
               icon={faGithub}
               style={{ color: theme === "light" ? "black" : "white" }}
