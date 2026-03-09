@@ -21,7 +21,6 @@
     "react-dom": "^19.0.0",
     "react-fontawesome": "^1.7.1",
     "react-lottie": "^1.2.10",
-    "tailwindcss": "^4.1.18",
     "typed.js": "^2.1.0"
   },
   "devDependencies": {
@@ -29,10 +28,18 @@
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
     "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.27",
     "eslint": "^9.21.0",
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^15.15.0",
+    "postcss": "^8.5.8",
+    "tailwindcss": "^4.2.1",
     "vite": "^6.2.0"
-  }
+  },
+  "description": "Welcome to my personal portfolio website! This project showcases my skills, experience, and passion for front-end development. It's built with modern technologies to ensure it looks great on any device and delivers an engaging user experience.",
+  "main": "eslint.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

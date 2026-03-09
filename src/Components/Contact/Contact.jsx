@@ -92,7 +92,29 @@ function Contact() {
                   required
                 ></textarea>
               </div>
-              <input className="btn hover" type="submit" value="Submit" />
+              <div>
+                {" "}
+                <button
+                  type="submit"
+                  className="    font-semibold
+    bg-[#00FF08]
+    text-[#222]
+    px-6 py-4
+    rounded-[20px]
+    cursor-pointer
+    tracking-[1px]
+    transition-all
+    duration-500
+    ease-out
+    shadow-[0_0_15px_#00FF08]
+    hover:scale-[1.05]
+    hover:shadow-[0_0_5px_#00FF08,0_0_15px_#00FF08,0_0_30px_#00FF08]
+
+    active:scale-[0.98]"
+                >
+                  Send
+                </button>
+              </div>
             </form>
             <span className="green">{result}</span>
           </div>

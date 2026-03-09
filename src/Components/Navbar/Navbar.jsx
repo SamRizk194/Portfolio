@@ -47,9 +47,12 @@ function Navbar() {
             key={link}
             href={`#${link.toLowerCase().replace(" ", "-")}`}
             onClick={() => setSidebarOpen(false)}
-            className={`sm:hover:border-b ${
-              theme === "dark" ? "text-white" : "text-black"
-            }`}
+            className={`
+      border-b-2 border-transparent      /* خط سفلي موجود دائمًا لكنه شفاف */
+      sm:hover:border-b-[#00ff08]       /* يظهر أخضر عند hover على sm أو أكبر */
+      transition-colors duration-300 ease-out
+      ${theme === "dark" ? "text-white" : "text-black"}
+    `}
           >
             {link}
           </a>
@@ -61,7 +64,7 @@ function Navbar() {
           onClick={toggleTheme}
           src={theme === "light" ? sunIcon : moonIcon}
           alt="Toggle theme"
-          className="w-5 h-5 cursor-pointer"
+          className="w-5 h-5 cursor-pointer mr-3"
         />
 
         <img
@@ -73,21 +76,24 @@ function Navbar() {
         <a
           href="#contact-us"
           className="
-    text-sm
-    max-sm:hidden
-    flex items-center gap-2
-    bg-[#00FF08]
-    text-[var(--background-color)]
-    px-6 py-2
-    rounded-[20px]
-    cursor-pointer
-    shadow-lg
-    transition-all duration-300 ease-out
-    hover:scale-[1.03]
-    hover:shadow-xl
-    active:scale-[0.98]
-    active:shadow-md
-  "
+  text-sm
+  max-sm:hidden
+  flex items-center gap-2
+  bg-[#00FF08]
+  text-[#222]
+  px-6 py-2
+  rounded-[15px]
+  cursor-pointer
+  tracking-[1px]
+  transition-all
+  duration-500
+  ease-out
+  shadow-[0_0_15px_#00FF08]
+  hover:scale-[1.05]
+  hover:shadow-[0_0_5px_#00FF08,0_0_15px_#00FF08,0_0_30px_#00FF08]
+
+  active:scale-[0.98]
+"
         >
           Connect
         </a>

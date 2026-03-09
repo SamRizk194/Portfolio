@@ -8,7 +8,6 @@
 
 .skills-title {
   font-weight: bold;
-  font-family: "Rubik", sans-serif;
   font-size: 40px;
 }
 
@@ -17,18 +16,17 @@
 }
 
 .skills-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 20px;
-  padding: 050px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 25px 40px;
+  justify-items: center;
+  margin-top: 30px;
+  padding: 0 20px;
 }
 
 .skill-card {
   width: 120px;
   height: 120px;
-  margin: 10px;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 16px;
@@ -61,8 +59,7 @@
 
 @media (max-width: 400px) {
   .skills-list {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 20px 0;
   }
 }

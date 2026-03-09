@@ -102,23 +102,22 @@ function Hero() {
         <a href={CV} download>
           <button
             className="
-                bg-[#00FF08]
-                text-[var(--background-color)]
-                border-0
-                rounded-[20px]
-                w-[126px]
-                h-[50px]
-                text-[20px]
-                font-semibold
-                shadow-lg
-                transition-all
-                duration-300
-                ease-out
-                hover:scale-[1.03]
-                hover:shadow-xl
-                active:scale-[0.98]
-                active:shadow-md
-              "
+    font-semibold
+    bg-[#00FF08]
+    text-[#222]
+    px-6 py-4
+    rounded-[20px]
+    cursor-pointer
+    tracking-[1px]
+    transition-all
+    duration-500
+    ease-out
+    shadow-[0_0_15px_#00FF08]
+    hover:scale-[1.05]
+    hover:shadow-[0_0_5px_#00FF08,0_0_15px_#00FF08,0_0_30px_#00FF08]
+
+    active:scale-[0.98]
+  "
           >
             Resume
           </button>
